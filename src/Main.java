@@ -36,8 +36,10 @@ public class Main {
 
 
             } else if (Main.ans.equals("2")) {
-                System.out.println("Enter what phone number of the text you want to delete: ");
-                 num1 = input.next();
+                System.out.println("Enter what phone number of the person that you texted that you want to delete: ");
+                num1 = input.next();
+
+               }
 
                 //System.out.println("What postion is this text from...Oldest (1) ");
                 ///Main.pos = input.nextInt() - 1;
@@ -47,24 +49,22 @@ public class Main {
                     System.out.println("You do not have any messages in here to delete");
                     break;
                 }
-            }
-           else if (Main.ans.equalsIgnoreCase("3")){
+             else if (Main.ans.equalsIgnoreCase("3")) {
 
-            }
-            else if (Main.ans.equals("4")) {
+            } else if (Main.ans.equals("4")) {
 
                 for (int i = 0; i < Main.Names.size(); i++) {
                     DateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy; HH:mm");
                     Date date = new Date();
                     System.out.println("Here are your Conversations: ");
-                    for (int jj = 0; jj <Main.Names.size(); jj++) {
-                        System.out.println("Your message to" +"(" + Main.numbers.get(jj)+")"+ "is "+ Main.Names.get(jj)   + " at " + date);
-                    }                    break loop1;
+                    for (int jj = 0; jj < Main.Names.size(); jj++) {
+                        System.out.println("Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
+                    }
+                    break loop1;
 
                 }
 
-            }
-            else if (Main.ans.equalsIgnoreCase("5")){
+            } else if (Main.ans.equalsIgnoreCase("5")) {
                 break loop1;
             }
 
