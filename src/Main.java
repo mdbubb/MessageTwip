@@ -54,6 +54,23 @@ public class Main {
                 MessageList m = new MessageList();
                 m.solve();
             } else if (Main.ans.equalsIgnoreCase("3")) {
+                DateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy; HH:mm");
+                Date date = new Date();
+                if (Main.Names.size() == 1) {
+                    System.out.println("You only have one conversation right now, so you cannot move the conversation to another one");
+                    break;
+                }
+                System.out.println("Enter the number of the message you would like to move");
+                for (int jj = 0; jj < Main.Names.size(); jj++) {
+                    System.out.println("CONVERSATION NUMBER " + jj + " Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
+                }
+                int move = input.nextInt();
+                System.out.println("Enter the number of the conversation you wnat to move this message to");
+                int next = input.nextInt();
+                System.out.println("Here are your updated conversations: ");
+
+                System.out.println("Your message to" + "(" + Main.numbers.get(next) + ")" + "is " + Main.Names.get(next) + " YOUR MOVED MESSAGE: " + Main.Names.get(move) + " at " + date);
+
 
             } else if (Main.ans.equals("4")) {
 
@@ -62,13 +79,14 @@ public class Main {
                     Date date = new Date();
                     System.out.println("Here are your Conversations: ");
                     for (int jj = 0; jj < Main.Names.size(); jj++) {
-                        System.out.println("Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
+                        System.out.println("CONVERSATION NUMBER " + jj + "Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
                     }
                     break loop1;
 
                 }
 
             } else if (Main.ans.equalsIgnoreCase("5")) {
+                System.out.println("Have a great day!");
                 break loop1;
             }
 
