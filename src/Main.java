@@ -22,10 +22,13 @@ public class Main {
             System.out.println("Would you like to send a message (1), delete a message(2), move a message (3), display your messages (4), or exit (5)");
             Main.ans = input.next();
             if (Main.ans.equals("1")) {
+                System.out.print("");
+                String j = input.nextLine();
                 System.out.println("Enter the phone number you want the message to go to");
-                Main.num = input.next();
+                Main.num = input.nextLine();
                 System.out.println("Enter your message");
-                Main.mes = input.next();
+                Main.mes = input.nextLine();
+                Boolean space = false;
                 Main.mes.toUpperCase();
                 Main.time = System.currentTimeMillis();
                 //System.out.println(time);
