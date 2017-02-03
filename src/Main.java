@@ -48,7 +48,7 @@ public class Main {
                 System.out.println("Enter which conversation # you would like to delete. ");
                 System.out.println("Here are your Conversations: ");
                 for (int jj = 0; jj < Main.Names.size(); jj++) {
-                    System.out.println("CONVERSATION NUMBER " + jj + " Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
+                    System.out.println("CONVERSATION NUMBER " + jj + " Your message to" + "(" + Main.numbers.get(jj) + ")" + "reads " + Main.Names.get(jj) + " at " + date);
                 }
                 num1 = input.nextInt();
                 MessageList m = new MessageList();
@@ -65,11 +65,11 @@ public class Main {
                     System.out.println("CONVERSATION NUMBER " + jj + " Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
                 }
                 int move = input.nextInt();
-                System.out.println("Enter the number of the conversation you wnat to move this message to");
+                System.out.println("Enter the number of the conversation you want to move this message to");
                 int next = input.nextInt();
                 System.out.println("Here are your updated conversations: ");
 
-                System.out.println("Your message to" + "(" + Main.numbers.get(next) + ")" + "is " + Main.Names.get(next) + " YOUR MOVED MESSAGE: " + Main.Names.get(move) + " at " + date);
+                System.out.println("Your message to" + "(" + Main.numbers.get(next) + ")" + "reads " + Main.Names.get(next) + " YOUR MOVED MESSAGE: " + Main.Names.get(move) + " at " + date);
 
 
             } else if (Main.ans.equals("4")) {
@@ -79,7 +79,7 @@ public class Main {
                     Date date = new Date();
                     System.out.println("Here are your Conversations: ");
                     for (int jj = 0; jj < Main.Names.size(); jj++) {
-                        System.out.println("CONVERSATION NUMBER " + jj + "Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
+                        System.out.println("CONVERSATION NUMBER " + jj + " Your message to" + "(" + Main.numbers.get(jj) + ")" + "reads " + Main.Names.get(jj) + " at " + date);
                     }
                     break loop1;
 

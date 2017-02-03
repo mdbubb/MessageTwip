@@ -16,9 +16,9 @@ public class MessageList {
             for (int i = 0; i < Main.Names.size(); i++) {
                 DateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy; HH:mm");
                 Date date = new Date();
-                System.out.println("Here are your Conversations now: ");
+                System.out.println("Here are your updated Conversations  ");
                 for (int jj = 0; jj < Main.Names.size(); jj++) {
-                    System.out.println("Your message to" + "(" + Main.numbers.get(jj) + ")" + "is " + Main.Names.get(jj) + " at " + date);
+                    System.out.println("Your message to" + "(" + Main.numbers.get(jj) + ")" + "reads " + Main.Names.get(jj) + " at " + date);
                 }
                 break;
 
